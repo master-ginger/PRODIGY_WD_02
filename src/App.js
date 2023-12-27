@@ -6,14 +6,8 @@ import { FaLinkedin } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 import { useEffect } from 'react';
-import {Link} from 'react-scroll';
 import * as React from 'react';
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
+import spdf from "./assets/bpr.pdf"
 
 
 
@@ -38,7 +32,8 @@ function App() {
     animate={{scale:0.95}}
     initial={{scale:0}}
      >
-<div className="py-64 px-64 w-50 text-7xl text-white no-underline hover:underline">BHAVANA <br></br>PILLAI<br></br><div className=''><button className='text-2xl rounded-md bg-white px-2 py-1 text-black shadow-md  shadow-cyan-500'> Resume</button></div></div>
+<div className="py-64 px-64 w-50 text-7xl text-white no-underline hover:underline">BHAVANA <br></br>PILLAI<br></br><div className=''>
+  <div className='text-2xl py-10 px-1 underline'><a href={spdf}>Resume</a></div></div></div>
 </motion.div>
         </div>
         
@@ -48,7 +43,9 @@ function App() {
         <div className='bg-white w-screen'>
           
           <div data-aos="flip-left" 
-     data-aos-easing="ease-out-cubic" data-aos-delay="1200"><img src="photo.jpg" alt="blah" className=" rounded-full h-80 w-80  mx-36 my-48"></img></div>
+     data-aos-easing="ease-out-cubic" data-aos-delay="1000">
+      <img src="photo.jpg" alt="blah" className=" rounded-full h-80 w-80  mx-36 my-48"></img>
+      </div>
         </div>
         {/*img end*/} 
       </div>{/*flex end*/} 
@@ -78,18 +75,12 @@ function App() {
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="900">< img src="css.png" alt="CSS" className=" rounded-3xl h-60 px-5 py-14 cursor-pointer filter grayscale hover:grayscale-0 hover:animate-wiggle"></img></div>
       <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="1000">< img src="myswl.png" alt="CSS" className=" rounded-3xl h-64 px-4 py-14 cursor-pointer filter grayscale hover:grayscale-0 hover:animate-wiggle"></img></div>
     </div>
-    <div className='text-white'>
-    
-    <div className='p-5 my-5 mx-32 text-center text-3xl'>
-      <text className='my-10'>Experience</text>
-      
-       </div>
+ 
    
     
-    </div>
     
-    <footer className=' px-2 h-96 bg-black text-white border-y-2'>
-      <div>Contact</div>
+    <footer className=' px-8 h-96 bg-black text-white border-y-2'>
+      <div className='text-2xl '>Contact Us</div>
       <div className=' py-2 flex justify-start'>
       <div className=''><FaInstagram  /></div>
       <div className='px-3'><FaWhatsapp /></div>

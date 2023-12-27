@@ -1,0 +1,26 @@
+@font-face {
+    font-family:ultra ;
+    src: url("../public/Ultra-Regular.ttf");
+}
+
+.ultra{
+    font-family: ultra;
+}
+
+@font-face {
+    font-family: ptserif;
+    src: url("../public/PTSerif-Regular.ttf");
+}
+
+.ptserif{
+    font-family: ptserif;
+}
+
+@font-face {
+    font-family: pacifico;
+    src: url("../public/Pacifico-Regular.ttf");
+}
+
+.pacifico{
+    font-family: pacifico;
+}
